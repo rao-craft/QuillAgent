@@ -91,7 +91,13 @@ up.
   - The kept fixture opened by hand:
     - the PDF has five Letter pages, running heads, a forced break, and a table split between rows;
     - the Word file in Quick Look is set in Charter, with real headings and lists.
-  - `QUILL_PAGES=1` has not been run live yet.
+  - `QUILL_PAGES=1`, run live after the push:
+    - Pages 15 (Pages Creator Studio, `com.apple.Pages`) saved a 6-page `.pages` from a cold launch in 6 s, and quit
+      after. Pages set the text in Charter, with the title block, real headings and "1 of 6" in the footer.
+    - The first attempt failed twice. The old bundle id, `com.apple.iWork.Pages`, is Pages 14. Beside Pages 15 it
+      waits behind an "out of date" dialog no one sees while it is hidden. And Pages 15 is sandboxed, so a file named
+      in an AppleScript `open` "can't be opened right now". Now Pages 15 is asked first, the file is handed over
+      through Launch Services, and AppleScript only saves the document and closes it.
 
 ## Through Craft
 
