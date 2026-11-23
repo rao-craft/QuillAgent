@@ -117,7 +117,7 @@ struct QuillLoop {
         let pdf = url("pdf").path
 
         let findings = outcome.findings
-        for finding in findings where finding.kind != .placeholder {
+        for finding in findings {
             problems.append(AgentProblem(kind: finding.kind.rawValue, text: finding.sentence))
         }
         let placeholders = QuillPlaceholders.find(in: document)

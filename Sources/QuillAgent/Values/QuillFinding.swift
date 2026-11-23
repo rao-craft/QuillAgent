@@ -17,8 +17,8 @@ public struct QuillFinding: Codable, Sendable, Equatable {
         case limit
         /// A name, date or figure the ask and the sources do not give.
         case invented
-        /// A placeholder left for the person to fill in.
-        case placeholder
+        /// A contact line, author, signature or speaker the brief does not give, replaced by a bracketed place.
+        case replaced
         /// Words copied from the prompt's example.
         case echo
         /// A figure whose picture is not there.
