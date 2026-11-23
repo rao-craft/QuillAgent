@@ -1,0 +1,19 @@
+{
+  "name": "Quill",
+  "tagline": "Letters, resumes, reports, proposals and more, written from your ask and laid out in pages, as PDF, Word, Pages, HTML or Markdown.",
+  "category": "writing",
+  "keywords": [
+    "documents",
+    "word",
+    "pages",
+    "pdf",
+    "letter",
+    "resume",
+    "report",
+    "docx"
+  ],
+  "platforms": [
+    "macOS 26"
+  ],
+  "license": "MIT"
+}
