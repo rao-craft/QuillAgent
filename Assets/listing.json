@@ -15,5 +15,12 @@
   "platforms": [
     "macOS 26"
   ],
-  "license": "MIT"
+  "license": "MIT",
+  "illustrations": [
+    {
+      "path": "Assets/illustrations/one-draft-every-file.png",
+      "alt": "A report laid out in pages, shown three ways: two pages of the PDF, the Word file and the Pages file, each with its file name.",
+      "caption": "One draft, every file: the PDF with page numbers and running heads, a Word file with real styles, and a Pages file saved by Pages."
+    }
+  ]
 }
