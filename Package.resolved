@@ -1,0 +1,15 @@
+{
+  "originHash" : "87e2d9589369c43fc6b974ad6a0da77cb56eb8760282f3f32469e3230ae4a769",
+  "pins" : [
+    {
+      "identity" : "granite",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/riteshpakala/Granite.git",
+      "state" : {
+        "branch" : "main",
+        "revision" : "de781839af746b4a995c739c3ef3c0506ffc03e3"
+      }
+    }
+  ],
+  "version" : 3
+}
