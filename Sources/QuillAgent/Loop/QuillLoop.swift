@@ -87,7 +87,7 @@ struct QuillLoop {
         files.stage(try QuillPDFWriter.write(outcome.paged.pages, document: document), at: url("pdf"))
         let pictures = outcome.pictures
         if formats.contains(.docx) || formats.contains(.pages) {
-            files.stage(try QuillDocxWriter.write(document, layout: outcome.paged.layout, pictures: pictures), at: url("docx"))
+            files.stage(try QuillDocxWriter.write(document, layout: outcome.paged.layout, pictures: pictures, pages: outcome.paged.raw.pages), at: url("docx"))
         }
         if formats.contains(.html) {
             let html = QuillKit.page(document, layout: QuillLayout.of(document), mode: .reading, pictures: pictures.dataURLs)
